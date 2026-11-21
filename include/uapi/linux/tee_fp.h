@@ -6,7 +6,7 @@
 #include <linux/types.h>
 
 /* /dev/tee_fp: power, reset and interrupt of a fingerprint sensor whose SPI
- * bus QTEE owns. The numbers are the stock Goodix control ABI's. No SPI or
+ * bus the secure world owns. The numbers are the stock Goodix control ABI's. No SPI or
  * biometric data passes through this node. Closing it removes power.
  * read() returns an interrupt sequence (__u32); poll() waits for changes.
  */
